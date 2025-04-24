@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #6baefa;
+    text-align: center;
+  }
+  
+  canvas {
+    border: 2px solid #333;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+  }
+
+#slider {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 7px 15px;
+  font-size: 100%;
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: rgb(4, 0, 20);
+  border: none;
+  cursor: grab;
+}

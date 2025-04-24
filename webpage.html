@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Your Own Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>He's falling!</h1>
+  <h3>Catch him with an appropriate vehicle.</h3>
+
+  <form id="controls">
+    <fieldset>
+      <legend>Select Setting:</legend>
+      <label><input type="radio" name="background" value="pictures/space.jpg" checked> Space</label>
+      <label><input type="radio" name="background" value="pictures/sky.jpg"> Sky</label>
+      <label><input type="radio" name="background" value="pictures/ocean.jpg"> Ocean</label>
+    </fieldset>
+
+    <label>Move Character (X): <input type="range" id="slider" min="50" max="850" value="450"></label>
+
+    <fieldset>
+      <legend>Toggle Items</legend>
+      <label><input type="checkbox" id="rocket"> Show Item 1 |</label>
+      <label><input type="checkbox" id="plane"> Show Item 2 |</label>
+      <label><input type="checkbox" id="submarine"> Show Item 3</label>
+    </fieldset>
+
+    <button type="button" onclick="playSound(1)">Sound 1</button>
+    <button type="button" onclick="playSound(2)">Sound 2</button>
+    <button type="button" onclick="playSound(3)">Sound 3</button>
+  </form>
+
+  <canvas id="scene" width="1000" height="500"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
